@@ -23,6 +23,12 @@
       display: block;
       margin: 0 auto;
     }
+    .tagline {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #FFD700;
+    }
     .gallery {
       padding: 2rem;
       display: grid;
@@ -37,10 +43,6 @@
     }
     .listing h3 {
       margin-top: 0;
-    }
-    .listing img {
-      width: 100%;
-      border-radius: 6px;
     }
     .listing video {
       width: 100%;
@@ -79,25 +81,28 @@
       background: #000;
       color: #FFD700;
     }
+    .info-note {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
   </style>
 </head>
 <body>
   <header>
     <img src="logo.jpg" alt="Tour de Realty Logo">
+    <div class="tagline">Transforming ordinary listing photos into immersive slideshow tours</div>
   </header>
 
   <section class="gallery">
     <div class="listing">
       <h3>123 Main Street</h3>
-      <img src="listing1.jpg" alt="Sample 1">
       <video controls>
-        <source src="Main_1SD.mp4" type="video/mp4">
+        <source src="video1.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
     <div class="listing">
       <h3>456 Oak Avenue</h3>
-      <img src="listing2.jpg" alt="Sapmle 2">
       <video controls>
         <source src="video2.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -108,6 +113,7 @@
 
   <section class="contact">
     <h2>Contact Us</h2>
+    <p class="info-note">To learn more or request pricing, email <a href="mailto:Info@tourderealty.com">Info@tourderealty.com</a></p>
     <form action="https://formspree.io/f/xyzpzknkd" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
@@ -121,4 +127,3 @@
   </footer>
 </body>
 </html>
-
